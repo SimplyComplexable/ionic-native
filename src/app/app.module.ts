@@ -13,6 +13,12 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
 import {Geolocation} from "@ionic-native/geolocation";
 import {CameraPage} from "../pages/camera/camera";
 import {Camera} from "@ionic-native/camera";
+import {MotionPage} from "../pages/motion/motion";
+import {NotificationsPage} from "../pages/notifications/notifications";
+import {BarcodePage} from "../pages/barcode/barcode";
+import {DeviceMotion} from "@ionic-native/device-motion";
+import {BarcodeScanner} from "@ionic-native/barcode-scanner";
+import {LocalNotifications} from "@ionic-native/local-notifications";
 
 @NgModule({
   declarations: [
@@ -20,7 +26,10 @@ import {Camera} from "@ionic-native/camera";
     HomePage,
     VibrationPage,
     GeolocationPage,
-    CameraPage
+    CameraPage,
+    MotionPage,
+    NotificationsPage,
+    BarcodePage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +41,10 @@ import {Camera} from "@ionic-native/camera";
     HomePage,
     VibrationPage,
     GeolocationPage,
-    CameraPage
+    CameraPage,
+    MotionPage,
+    NotificationsPage,
+    BarcodePage
   ],
   providers: [
     StatusBar,
@@ -40,7 +52,10 @@ import {Camera} from "@ionic-native/camera";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Vibration,
     Geolocation,
-    Camera
+    Camera,
+    DeviceMotion,
+    LocalNotifications,
+    BarcodeScanner
   ]
 })
 export class AppModule {}

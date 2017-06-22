@@ -7,6 +7,9 @@ import { HomePage } from '../pages/home/home';
 import {VibrationPage} from "../pages/vibration/vibration";
 import {GeolocationPage} from "../pages/geolocation/geolocation";
 import {CameraPage} from "../pages/camera/camera";
+import {BarcodePage} from "../pages/barcode/barcode";
+import {MotionPage} from "../pages/motion/motion";
+import {NotificationsPage} from "../pages/notifications/notifications";
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +29,10 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Vibration', component: VibrationPage },
       { title: 'Geolocation', component: GeolocationPage },
-      { title: 'Camera', component: CameraPage }
+      { title: 'Camera', component: CameraPage },
+      { title: 'Barcode', component: BarcodePage },
+      { title: 'Motion', component: MotionPage },
+      { title: 'Notifications', component: NotificationsPage },
     ];
 
   }
